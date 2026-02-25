@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<title>Dream Places</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:#8b5e3c;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            rgba(0,0,0,0.02) 0px,
+            rgba(0,0,0,0.02) 2px,
+            transparent 2px,
+            transparent 6px
+        );
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+h1{
+    margin:40px 0;
+    font-size:45px;
+    color:#5a3e2b;
+    letter-spacing:3px;
+}
+
+.collage{
+    width:1200px;
+    height:850px;
+    position:relative;
+}
+
+/* COMMON SHAPE STYLE */
+.shape{
+    position:absolute;
+    overflow:hidden;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+.shape:hover{
+    transform:scale(1.05) rotate(0deg);
+    z-index:10;
+}
+
+.shape img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Vertical label */
+.label{
+    position:absolute;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight:bold;
+    font-size:18px;
+    letter-spacing:4px;
+    color:#4a2f1c;
+    font-family: 'Pacifico', cursive;
+}
+
+/* USA - Circle */
+.circle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    top:50px;
+    left:130px;
+    transform:rotate(-6deg);
+}
+.label1{
+    top:60px;
+    left:80px;
+}
+
+/* NORTH LUZON - Square */
+.square{
+    width:180px;
+    height:180px;
+    bottom:80px;
+    left:400px;
+    transform:rotate(5deg);
+}
+.label2{
+    bottom:90px;
+    left:350px;
+}
+
+/* PALAWAN - Triangle */
+.poly1{
+    width:190px;
+    height:180px;
+    clip-path:polygon(50% 0%, 0% 100%, 100% 100%);
+    top:30px;
+    right:120px;
+    transform:rotate(8deg);
+}
+.label3{
+    top:40px;
+    right:80px;
+}
+
+/* EGYPT - Pentagon */
+.poly2{
+    width:180px;
+    height:180px;
+    clip-path:polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    bottom:80px;
+    right:130px;
+    transform:rotate(-7deg);
+}
+.label4{
+    bottom:90px;
+    right:90px;
+}
+
+/* BOHOL - Diamond */
+.poly3{
+    width:170px;
+    height:170px;
+    clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    top:350px;
+    left:100px;
+    transform:rotate(10deg);
+}
+.label5{
+    top:360px;
+    left:60px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>My Travel Scrapbook</h1>
+
+<div class="collage">
+
+<!-- USA -->
+<a href="usa.html" class="shape circle">
+    <img src="USA/header.jpg">
+</a>
+<div class="label label1">USA</div>
+
+<!-- NORTH LUZON -->
+<a href="northluzon.html" class="shape square">
+    <img src="North luzon/header.jpg">
+</a>
+<div class="label label2">NORTH LUZON</div>
+
+<!-- PALAWAN -->
+<a href="palawan.html" class="shape poly1">
+    <img src="Palawan/Header.jpg">
+</a>
+<div class="label label3">PALAWAN</div>
+
+<!-- EGYPT -->
+<a href="egypt.html" class="shape poly2">
+    <img src="Egypt/header.jpg">
+</a>
+<div class="label label4">EGYPT</div>
+
+<!-- BOHOL -->
+<a href="bohol.html" class="shape poly3">
+    <img src="Bohol/header.jpg">
+</a>
+<div class="label label5">BOHOL</div>
+
+</div>
+
+</body>
+</html>
